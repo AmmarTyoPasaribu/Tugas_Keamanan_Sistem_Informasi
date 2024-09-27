@@ -1,0 +1,253 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    background: #00a39d;
+    padding: 15px 0;
+    display: flex;
+    z-index: 1000; 
+}
+
+.container-logo {
+    padding: 0 0 0 350px;
+}
+
+.container-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: calc(100vh - 60px);
+    padding: 80px 20px 20px;
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 400px;
+    margin-right: 50px;
+}
+
+.login-box h2 {
+    color: #00a99d;
+    margin-bottom: 20px;
+}
+
+.login-box label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666666;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    font-family: inherit;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+
+.login-box input[type="text"]:focus,
+.login-box input[type="password"]:focus {
+    outline: none;
+} 
+
+.login-box .captcha {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login-box .captcha img {
+    margin-right: 10px;
+}
+
+.login-box .captcha a {
+    color: #f7941d;
+    text-decoration: none;
+}
+
+.login-box .login-btn {
+    background-color: #00a99d;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.login-box .login-btn i {
+    margin-left: 10px;
+}
+
+.login-box .forgot-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.login-box .forgot-links a {
+    color: #f7941d;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.info-box {
+    max-width: 500px;
+}
+
+.info-box h2 {
+    font-size: 40px;
+    line-height: 57px;
+    margin-bottom: 32px;
+    color: #00a39d;
+    font-weight: 700;
+    letter-spacing: .1px;
+}
+
+.info-box p {
+    font-size: 17px;
+    line-height: 57px;
+    margin-bottom: 32px;
+    line-height: 32px;
+    letter-spacing: .1px;
+    text-align: justify;
+    color: #222;
+}
+
+.info-box p strong {
+    color: #000000;
+}
+
+.info-box .tips-btn {
+    background-color: #f7941d;
+    color: #ffffff;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1024px) {
+    .container-logo {
+        padding-left: 200px;
+    }
+
+    .login-box, .info-box {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-content {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 300px;
+    }
+
+    .container-logo {
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .login-box, .info-box {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .login-box {
+        padding: 20px;
+    }
+
+    .info-box h2 {
+        font-size: 24px;
+    }
+
+    .info-box p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .login-box .captcha {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .login-box .captcha img {
+        margin-bottom: 10px;
+    }
+
+    .login-box .forgot-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .login-box .forgot-links a {
+        margin-bottom: 10px;
+    }
+
+    .info-box .tips-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-content {
+        padding-top: 300px;
+    }
+
+    .container-logo img {
+        width: 120px;
+    }
+
+    .login-box h2 {
+        font-size: 20px;
+    }
+
+    .info-box h2 {
+        font-size: 20px;
+    }
+
+    .info-box p {
+        font-size: 14px;
+    }
+
+    .login-box .login-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .info-box .tips-btn {
+        padding: 10px 20px;
+    }
+}
